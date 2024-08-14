@@ -104,7 +104,7 @@ contains
 
         ! Calculate the alpha and beta parameters for the wet particle
         !            relative to amonium sulfate
-        beta = exp((0.00077_f * humidity) / (1.009_f - humidity))
+        beta = o.5*exp((0.00077_f * humidity) / (1.009_f - humidity))
         if (humidity .le. 0.97_f) then
           theta = 1.058_f
         else
