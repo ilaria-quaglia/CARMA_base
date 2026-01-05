@@ -113,6 +113,7 @@
 #define dpc_threshold(igroup)   carma%f_group(igroup)%f_dpc_threshold
 #define rmon(igroup)            carma%f_group(igroup)%f_rmon
 #define df(ibin,igroup)         carma%f_group(igroup)%f_df(ibin)
+#define rhogroup(ibin,igroup)   carma%f_group(igroup)%f_rho(ibin)
 #define nmon(ibin,igroup)       carma%f_group(igroup)%f_nmon(ibin)
 #define falpha(igroup)          carma%f_group(igroup)%f_falpha
 #define neutral_volfrc(igroup)  carma%f_group(igroup)%f_neutral_volfrc
@@ -288,6 +289,7 @@
 #define jglow         carma%f_jglow
 #define igup          carma%f_igup
 #define jgup          carma%f_jgup
+#define use_ccd       carma%f_use_ccd
 
 !  Particle fall velocities, transport rates, and coagulation kernels
 #define bpm           cstate%f_bpm
